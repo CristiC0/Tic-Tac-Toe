@@ -1,0 +1,50 @@
+#board {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.square {
+    position: relative;
+    border: 2px solid black;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: center;
+}
+p {
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#square1,
+#square2,
+#square3 {
+    border-top: none;
+}
+#square1,
+#square4,
+#square7 {
+    border-left: none;
+}
+#square3,
+#square6,
+#square9 {
+    border-right: none;
+}
+#square7,
+#square8,
+#square9 {
+    border-bottom: none;
+}
